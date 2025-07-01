@@ -1,0 +1,7 @@
+# requirements.txt
+
+playwright==1.52.0
+selectolax==0.3.29
+
+# After installing, users should run:
+# python -m playwright install chromium

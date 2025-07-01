@@ -1,0 +1,23 @@
+{
+  "item_selector": "div._1_P15GG6AKyF_NMX2j4-Mu",
+  "fields": {
+    "title": "div.StoreSaleWidgetTitle",
+    "thumbnail": "div.CapsuleImageCtn img",
+    "tags": "a.WidgetTag",
+    "review_score": "div._3ZWs0kB-1tuqQtie9KK-E7 > div:nth-child(1)",
+    "review_count": "div._3ZWs0kB-1tuqQtie9KK-E7 > div:nth-child(2)",
+    "original_price": "div._3fFFsvII7Y2KXNLDk_krOW",
+    "discounted_price": "div._3j4dI1yA7cRfCvK8h406OB",
+    "discount_percent": "div.cnkoFkzVCby40gJ0jGGS4"
+  },
+  "attributes": {
+    "thumbnail": "src",
+    "tags": "text",
+    "title": "text",
+    "review_score": "text",
+    "review_count": "text",
+    "original_price": "text",
+    "discounted_price": "text",
+    "discount_percent": "text"
+  }
+}
