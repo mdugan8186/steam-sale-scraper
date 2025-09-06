@@ -1,5 +1,6 @@
-# Steam Specials Scraper  
-*Playwright-powered scraper for Steam “Specials” — exports clean, analysis-ready CSVs.*
+# Steam Specials Scraper
+
+_Playwright-powered scraper for Steam “Specials” — exports clean, analysis-ready CSVs._
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
@@ -10,6 +11,7 @@ A production-style Python scraper that collects deeply discounted games from the
 ---
 
 ## 🔍 Key Features
+
 - **JS rendering** with Playwright (Chromium) to handle dynamic content.
 - **Structured fields**: `title`, `thumbnail`, `tags`, `review_score`, `review_count`, `original_price`, `discounted_price`, `discount_percent`, plus a scrape timestamp on save.
 - **Config-driven scraping** via `config.json` (selectors + attribute mapping).
@@ -20,11 +22,13 @@ A production-style Python scraper that collects deeply discounted games from the
 ## ⚙️ Quick Start
 
 ### Prerequisites
+
 - Python **3.10+**
 - Git
 - Playwright browsers (install step below)
 
 ### Install
+
 ```bash
 # 1) Clone
 git clone https://github.com/mdugan8186/steam-specials-scraper.git
@@ -45,6 +49,7 @@ python -m playwright install chromium
 ```
 
 ### Run
+
 ```bash
 python main.py
 ```
@@ -55,17 +60,21 @@ python main.py
 ---
 
 ## 📁 Output
+
 - CSV is written to: `output/steam_specials.csv`
 - Columns include:
+
 ```
 title, thumbnail, tags, review_score, review_count,
 original_price, discounted_price, discount_percent
 ```
+
 - Tags are saved as a comma-separated string.
 
 ---
 
 ## 🧩 Configuration
+
 All selectors & attribute mappings live in `config.json`:
 
 ```json
@@ -99,6 +108,7 @@ If Steam updates its markup, adjust these selectors (no Python code changes need
 ---
 
 ## 🧪 Testing & Dev Notes
+
 This repo includes simple test scripts you can run manually:
 
 - **Render test** (`test_render.py`) — renders the page and writes HTML to `output/test_rendered_page.html`.
@@ -106,6 +116,7 @@ This repo includes simple test scripts you can run manually:
 - **Transform test** (`test_transform.py`) — runs parsing helpers and prints cleaned items.
 
 > Run sequence:
+
 ```bash
 python test_render.py
 python test_extract.py
@@ -117,6 +128,7 @@ You can also inspect `output/test_rendered_page.html` to update selectors when S
 ---
 
 ## 🛠️ Tech Stack
+
 - **Playwright (Python)** for rendering
 - **Selectolax** for fast HTML parsing
 - **CSV** outputs for easy analysis
@@ -124,18 +136,25 @@ You can also inspect `output/test_rendered_page.html` to update selectors when S
 ---
 
 ## 🎥 Demo
-Add a short capture of a headed run to `media/demo.gif` (or `media/demo.mp4`).  
-*macOS tip:* QuickTime → New Screen Recording → record a brief run.
+
+Here’s an example of the scraper output:
+
+![Steam Specials Output](media/steam-scraper.png)
+
+The full CSV file is available at: [`output/steam_specials.csv`](output/steam_specials.csv)
 
 ---
 
 ## 📄 License
+
 This project is licensed under the **MIT License**. See [`LICENSE`](./LICENSE).
 
 ---
 
 ## 👤 About
-**Mike Dugan** — Python Web Scraper & Automation Developer  
-- GitHub: [@mdugan8186](https://github.com/mdugan8186)  
-- Portfolio Website: https://mdugan8186.github.io/scraping-portfolio/  
+
+**Mike Dugan** — Python Web Scraper & Automation Developer
+
+- GitHub: [@mdugan8186](https://github.com/mdugan8186)
+- Portfolio Website: https://mdugan8186.github.io/scraping-portfolio/
 - Email: **mdugan8186.work@gmail.com**
