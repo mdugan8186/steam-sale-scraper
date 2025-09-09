@@ -4,7 +4,7 @@ _Playwright-powered scraper for Steam “Specials” — exports clean, analysis
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Last Commit](https://img.shields.io/github/last-commit/mdugan8186/steam-sales-scraper)
+![Last Commit](https://img.shields.io/github/last-commit/mdugan8186/steam-sale-scraper)
 
 A production-style Python scraper that collects deeply discounted games from the Steam Store’s **Specials** page. It renders the page with Playwright, parses content with Selectolax, and saves tidy CSVs you can drop into dashboards or analysis workflows.
 
