@@ -145,6 +145,13 @@ The full CSV file is available at: [`output/steam_specials.csv`](output/steam_sp
 
 ---
 
+## ⚖️ Legal & Ethical Use
+
+This scraper is intended for **educational and demonstration purposes only**.  
+Steam’s platform and content are subject to their Terms of Service. Please review and comply with their policies before using this project beyond small-scale testing or portfolio demonstration.
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License**. See [`LICENSE`](./LICENSE).
